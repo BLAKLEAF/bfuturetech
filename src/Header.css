@@ -33,15 +33,20 @@
   font-size: 1rem;
 }
 
+.cart {
+  margin-right: 0;
+  padding-left: 4rem;
+}
+
 .cartItem {
   position: relative;
   bottom: 0.4rem;
+  left: 0.97rem;
 }
 
 .cartIcon {
   position: relative;
   top: 1rem;
-  right: 1rem;
   transform: rotateY(180deg);
 }
 
