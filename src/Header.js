@@ -12,9 +12,10 @@ function Header() {
                 <SearchRoundedIcon className='searchIcon' />
             </div>
             <div className='header_nav'>
-                <span className='header_navSpan navOption1'> Check out Gadgets </span>
-                <span className='header_navSpan navOption2'> Order Gadgets </span>
-                <span className='header_navSpan navOption3'> Customize Gadgets </span>
+                <span className='header_navSpan nav_signIn'> <span className='nav_bold'>Sign</span>  In </span>
+                <span className='header_navSpan navOption1'> <span className='nav_bold'>Check out</span> <br />  Gadgets </span>
+                <span className='header_navSpan navOption2'> <span className='nav_bold'>Order</span> <br />  Gadgets </span>
+                <span className='header_navSpan navOption3'> <span className='nav_bold'>Customize</span> <br />  Gadgets </span>
             </div>
         </div>
     )
