@@ -33,6 +33,18 @@
   font-size: 1rem;
 }
 
+.cartItem {
+  position: relative;
+  bottom: 0.4rem;
+}
+
+.cartIcon {
+  position: relative;
+  top: 1rem;
+  right: 1rem;
+  transform: rotateY(180deg);
+}
+
 .header_search {
   display: flex;
   flex: 1;

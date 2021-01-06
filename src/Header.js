@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import bft from './bft.svg';
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 function Header() {
     return (
@@ -16,6 +17,10 @@ function Header() {
                 <span className='header_navSpan navOption1'> <span className='nav_bold'>Check out</span> <br />  Gadgets </span>
                 <span className='header_navSpan navOption2'> <span className='nav_bold'>Order</span> <br />  Gadgets </span>
                 <span className='header_navSpan navOption3'> <span className='nav_bold'>Customize</span> <br />  Gadgets </span>
+                <span className='header_navSpan cart'>
+                    <span className='cartItem'>0</span>
+                    <ShoppingCartIcon className='cartIcon' />
+                </span>
             </div>
         </div>
     )
