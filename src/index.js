@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Banner from './Banner';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    {/* <Banner /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
