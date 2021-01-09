@@ -1,5 +1,4 @@
 import React from 'react'
-import Banner from './Banner'
 import './Home.css'
 import Product from './Product'
 import Avalon from './images/avalon.jpg'
@@ -7,7 +6,6 @@ import Avalon from './images/avalon.jpg'
 function Home() {
     return (
         <div className='home'>
-            <Banner className='banner_writing' />
             <div className="home_items">
                 <div className="home_itemsRow">
                     <Product
@@ -106,9 +104,6 @@ function Home() {
                     />
                 </div>
             </div>
-
-
-
         </div>
     )
 }
