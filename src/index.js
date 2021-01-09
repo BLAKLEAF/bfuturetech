@@ -4,11 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Banner from './Banner';
+import reducer, { initialState } from './reducer';
+import { StateProvider } from './StateProvider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    {/* <Banner /> */}
+    <StateProvider initialState={initialState} reducer={reducer}>
+      <App />
+      {/* <Banner /> */}
+    </StateProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
