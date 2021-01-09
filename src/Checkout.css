@@ -1,5 +1,6 @@
 .checkout {
   display: flex;
+  justify-content: space-evenly;
   padding: 20px;
   background-color: rgb(56, 53, 53);
   height: max-content;
