@@ -4,8 +4,11 @@ import bft from './bft.svg';
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { Link } from 'react-router-dom';
+import { useStateValue } from './StateProvider';
 
 function Header() {
+    const [{ basket }, dispatch] = useStateValue();
+
     return (
         <div className='header'>
             <Link to='/' className='header_logo' >
@@ -24,7 +27,7 @@ function Header() {
                 <span className='header_navSpan navOption3'> <span className='nav_bold'>Customize</span> <br />  Gadgets </span>
                 <Link to='/checkout' className='header_navSpan' >
                     <span className='cart'>
-                        <span className='cartItem'>0</span>
+                        <span className='cartItem'>{basket?.length}</span>
                         <ShoppingCartIcon className='cartIcon' />
                     </span>
                 </Link>
