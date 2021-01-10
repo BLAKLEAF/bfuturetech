@@ -1,7 +1,6 @@
 import React from 'react'
 import './Product.css'
 import Star from './images/star.svg'
-import Avalon from './images/avalon.jpg'
 import { useStateValue } from './StateProvider'
 
 function Product({ id, title, image, price, rating, placeholder }) {
