@@ -19,7 +19,7 @@ function Header() {
                 <SearchRoundedIcon className='searchIcon' />
             </div>
             <div className='header_nav'>
-                <Link className='header_navSpan'>
+                <Link to='/login' className='header_navSpan'>
                     <span className='signIn'> <span className='nav_bold'>Sign</span> <br />  In </span>
                 </Link>
                 <span className='header_navSpan navOption1'> <span className='nav_bold'>Check out</span> <br />  Gadgets </span>
