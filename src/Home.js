@@ -11,7 +11,7 @@ function Home() {
                     <Product
                         id='1'
                         title='Starship Avalon'
-                        price={100000000}
+                        price={3}
                         image={Avalon}
                         rating={10}
                         placeholder='Starship Avalon'
@@ -19,7 +19,7 @@ function Home() {
                     <Product
                         id='2'
                         title='Starship Avalon'
-                        price={100000000}
+                        price={3}
                         image={Avalon}
                         rating={10}
                         placeholder='Starship Avalon'
@@ -27,7 +27,7 @@ function Home() {
                     <Product
                         id='3'
                         title='Starship Avalon'
-                        price={100000000}
+                        price={3}
                         image={Avalon}
                         rating={10}
                         placeholder='Starship Avalon'
@@ -35,7 +35,7 @@ function Home() {
                     <Product
                         id='4'
                         title='Starship Avalon'
-                        price={100000000}
+                        price={3}
                         image={Avalon}
                         rating={10}
                         placeholder='Starship Avalon'
@@ -43,7 +43,7 @@ function Home() {
                     <Product
                         id='5'
                         title='Starship Avalon'
-                        price={100000000}
+                        price={3}
                         image={Avalon}
                         rating={10}
                         placeholder='Starship Avalon'
@@ -51,7 +51,7 @@ function Home() {
                     <Product
                         id='6'
                         title='Starship Avalon'
-                        price={100000000}
+                        price={3}
                         image={Avalon}
                         rating={10}
                         placeholder='Starship Avalon'
@@ -62,7 +62,7 @@ function Home() {
                     <Product
                         id='1'
                         title='Starship Avalon'
-                        price={100000000}
+                        price={3}
                         image={Avalon}
                         rating={10}
                         placeholder='Starship Avalon'
@@ -70,7 +70,7 @@ function Home() {
                     <Product
                         id='2'
                         title='Starship Avalon'
-                        price={100000000}
+                        price={3}
                         image={Avalon}
                         rating={10}
                         placeholder='Starship Avalon'
@@ -78,7 +78,7 @@ function Home() {
                     <Product
                         id='3'
                         title='Starship Avalon'
-                        price={100000000}
+                        price={3}
                         image={Avalon}
                         rating={10}
                         placeholder='Starship Avalon'
@@ -89,7 +89,7 @@ function Home() {
                     <Product
                         id='1'
                         title='Starship Avalon'
-                        price={100000000}
+                        price={3}
                         image={Avalon}
                         rating={10}
                         placeholder='Starship Avalon'
@@ -97,7 +97,7 @@ function Home() {
                     <Product
                         id='2'
                         title='Starship Avalon'
-                        price={100000000}
+                        price={3}
                         image={Avalon}
                         rating={10}
                         placeholder='Starship Avalon'

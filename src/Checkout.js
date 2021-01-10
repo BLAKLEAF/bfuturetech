@@ -7,8 +7,9 @@ function Checkout() {
         <div className='checkout'>
             <div className="checkout_left">
                 <h2 className="checkout_title">
-                    Your cart items
+                    Your Shopping Cart
                 </h2>
+                
 
             </div>
             <div className="checkout_right">
