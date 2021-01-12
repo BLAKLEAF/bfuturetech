@@ -10,7 +10,7 @@ function CheckoutProduct({ id, image, title, price, rating }) {
         dispatch({
             type: 'REMOVE_FROM_BASKET',
             id: id,
-        })
+        })  
     }
 
     return (

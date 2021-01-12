@@ -48,6 +48,11 @@ function App() {
             <Banner />
             <Checkout />
           </Route>
+          <Route path='/payment'>
+            <Header />
+            <Banner />
+
+          </Route>
           <Route path='/'>
             <Header />
             <Banner />
