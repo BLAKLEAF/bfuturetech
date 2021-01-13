@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import bft from './bft.svg';
+import FTlogo from './FT-logo.svg';
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { Link } from 'react-router-dom';
@@ -19,7 +19,7 @@ function Header() {
     return (
         <div className='header'>
             <Link to='/' className='header_logo' >
-                <img src={bft} alt="logo" />
+                <img src={FTlogo} alt="logo" />
             </Link>
             <div className='header_search'>
                 <input className='header_searchInput' type='text' placeholder='Search Gadgets here...' />

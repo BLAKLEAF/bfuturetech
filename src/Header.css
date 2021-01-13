@@ -12,9 +12,10 @@
 }
 
 .header_logo {
-  width: 100px;
+  width: 70px;
   object-fit: contain;
   margin-top: 1rem;
+  /* transform: skewX(-50deg); */
 }
 
 .header_nav {

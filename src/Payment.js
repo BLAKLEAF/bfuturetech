@@ -1,3 +1,4 @@
+import { useStripe } from '@stripe/react-stripe-js';
 import React from 'react'
 import { Link } from 'react-router-dom';
 import CheckoutProduct from './CheckoutProduct';
@@ -6,6 +7,10 @@ import { useStateValue } from './StateProvider'
 
 function Payment() {
     const [{ basket, user }, dispatch] = useStateValue();
+
+    const stripe = useStripe();
+
+
     return (
         <div className='payment'>
             <div className="payment_container">
