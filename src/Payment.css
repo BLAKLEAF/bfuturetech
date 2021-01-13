@@ -7,11 +7,7 @@
   padding: 10px;
   font-weight: 400;
   background-color: darkkhaki;
-  border-bottom: 1px solid lightgray;
-}
-
-.payment_container > h1 a {
-  text-decoration: none;
+  border-bottom: 1px solid lightgray; 
 }
 
 .payment_section {
@@ -26,6 +22,7 @@
 }
 
 .payment_address,
-.payment_items   {
+.payment_items,
+.payment_details {
   flex: 0.8;
 }

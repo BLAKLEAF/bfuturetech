@@ -13,8 +13,9 @@
 
 .header_logo {
   width: 70px;
+  /* height: -100px; */
   object-fit: contain;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   /* transform: skewX(-50deg); */
 }
 
