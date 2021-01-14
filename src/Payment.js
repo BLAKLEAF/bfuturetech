@@ -6,7 +6,8 @@ import { Link, useHistory } from 'react-router-dom';
 import CheckoutProduct from './CheckoutProduct';
 import './Payment.css'
 import { getBasketTotal } from './reducer';
-import { useStateValue } from './StateProvider'
+import { useStateValue } from './StateProvider';
+import { db } from "./firebase";
 
 function Payment() {
     const [{ basket, user }, dispatch] = useStateValue();
@@ -33,6 +34,8 @@ function Payment() {
         getClientSecret();
     }, [basket])
 
+    console.log(clientSecret);
+
     const handleSubmit = async (event) => {
         event.preventDefault(); //stops from refreshing
         setProcessing(true);
@@ -42,9 +45,26 @@ function Payment() {
                 card: elements.getElement(CardElement)
             }
         }).then(({ paymentIntent }) => {
+
+            db
+                .collection('users')
+                .doc(user?.uid)
+                .collection('orders')
+                .doc(paymentIntent.id)
+                .set({
+                    basket: basket,
+                    amount: paymentIntent.amount,
+                    created: paymentIntent.created
+
+                })
+
             setSucceeded(true);
-            setError(true);
-            setProcessing(true);
+            setError(null);
+            setProcessing(false);
+
+            dispatch({
+                type: 'EMPTY_BASKET'
+            })
 
             history.replace('/orders')
         })
