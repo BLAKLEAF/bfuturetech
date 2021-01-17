@@ -20,25 +20,17 @@ function Header() {
 
     return (
         <div className='header'>
-
             <div className="header_container">
-
-
                 <Link to='/' className='header_logo' >
                     <img src={FTlogo} alt="logo" />
                 </Link>
 
-                <div className='header-search-nav'>
-
+                <div className='header-search-nav-cart'>
                     <div className='header_search'>
                         <input className='header_searchInput' type='text' placeholder='Search Gadgets here...' />
                         <SearchRoundedIcon className='searchIcon' />
                     </div>
-
                     <Link to={!user && '/login'} onClick={handleAuthenticaton} className='header_nav'>
-                        {/* <span className='nav_bold'>
-                            Hello {!user ? 'Guest' : user.email} ,
-                        </span> */}
                         <span className="nav_bold signIn">
                             Hello {!user ? 'Guest' : user.email}
                             <ArrowRightRoundedIcon className='smallArrow' />
@@ -47,30 +39,16 @@ function Header() {
                             <ArrowForwardIosRoundedIcon style={{ fontSize: 10 }} className='arrow arrow2' />
                             <ArrowForwardIosRoundedIcon style={{ fontSize: 10 }} className='arrow arrow3' />
                         </span>
-                        {/* <span className="signIn">
-                            {user ? 'Sign Out' : 'Sign In'}
-                            <ArrowForwardIosRoundedIcon style={{ fontSize: 10 }} className='arrow arrow1' />
-                            <ArrowForwardIosRoundedIcon style={{ fontSize: 10 }} className='arrow arrow2' />
-                            <ArrowForwardIosRoundedIcon style={{ fontSize: 10 }} className='arrow arrow3' />
-                        </span> */}
                     </Link>
-
                     <Link to='/orders' className='header_nav'>
                         <span className='nav_bold your_orders'>Your Orders</span>
                     </Link>
-
-                    {/* <span className='header_navSpan navOption2'> <span className='nav_bold'>Order</span> <br />  Gadgets </span>
-                    <span className='header_navSpan navOption3'> <span className='nav_bold'>Customize</span> <br />  Gadgets </span> */}
-
-                    <Link to='/checkout' className='header_nav cart' >
+                    <Link to='/checkout' className='header_nav' >
                         <span className='cartItem'>{basket?.length}</span>
                         <ShoppingCartIcon className='cartIcon' />
                     </Link>
-
                 </div>
-
             </div>
-
         </div>
     )
 }
