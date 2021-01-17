@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Login.css'
 import bft from './bft.svg'
+import FTlogo from './FT-logo.svg';
 import { Link, useHistory } from 'react-router-dom'
 import { auth } from "./firebase";
 
@@ -39,7 +40,7 @@ function Login() {
     return (
         <div className='login'>
             <Link to='/'>
-                <img className='login_logo' src={bft} alt="Logo" />
+                <img className='login_logo' src={FTlogo} alt="Logo" />
             </Link>
             <div className="login_container">
                 <h1>Sign-In</h1>

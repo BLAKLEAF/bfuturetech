@@ -69,8 +69,8 @@ function App() {
           </Route>
           <Route path='/'>
             <Header />
-            <Banner />
-            <Home />
+            {/* <Banner /> */}
+            {/* <Home /> */}
           </Route>
         </Switch>
       </div>
