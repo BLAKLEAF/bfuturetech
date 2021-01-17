@@ -48,11 +48,13 @@
   width: 350px;
   padding: 0 15px;
   transition: all 0.5s 0.2s ease;
+  z-index: 2;
 }
 
 .searchIcon {
   color: white;
   z-index: 3;
+  cursor: pointer;
 }
 
 .header_nav {
