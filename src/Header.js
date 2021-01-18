@@ -5,6 +5,7 @@ import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import ArrowForwardIosRoundedIcon from '@material-ui/icons/ArrowForwardIosRounded';
 import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded';
+import ShoppingBasketRoundedIcon from '@material-ui/icons/ShoppingBasketRounded';
 import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
@@ -41,9 +42,9 @@ function Header() {
                         </span>
                     </Link>
                     <Link to='/orders' className='header_nav'>
-                        <span className='nav_bold your_orders'>Your Orders</span>
+                        <ShoppingBasketRoundedIcon className='orderIcon' />
                     </Link>
-                    <Link to='/checkout' className='header_nav' >
+                    <Link to='/checkout' className='header_nav cart' >
                         <span className='cartItem'>{basket?.length}</span>
                         <ShoppingCartIcon className='cartIcon' />
                     </Link>
