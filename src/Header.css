@@ -2,8 +2,12 @@
   height: 50px;
   position: sticky;
   top: 0;
-  background: black;
+  background: transparent;
   z-index: 5;
+}
+
+.header.active {
+  background: black;
 }
 
 .header_container {
@@ -153,12 +157,18 @@
   .header_searchInput {
     left: 20px;
     height: 28px;
+    color: black;
   }
 
   .header_searchInput:focus {
     border: 1px solid white;
-    width: 200px;
+    width: 90vw;
     padding: 0 10px;
+    background: white;
+    margin-right: 10vw;
+    /* top: 45vh; */
+    left: 15px;
+    z-index: 6;
   }
 
   .searchIcon {

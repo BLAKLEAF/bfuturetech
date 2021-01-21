@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import FTlogo from './FT-logo.svg';
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
@@ -12,6 +12,7 @@ import { auth } from './firebase';
 
 function Header() {
     const [{ basket, user }, dispatch] = useStateValue();
+    const [background, setBackground] = useState(false);
 
     const handleAuthenticaton = () => {
         if (user) {
@@ -19,8 +20,18 @@ function Header() {
         }
     }
 
+    const changeBackground = () => {
+        if (window.scrollY > 100) {
+            setBackground(true);
+        } else {
+            setBackground(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground);
+
     return (
-        <div className='header'>
+        <div className={background ? 'header active' : 'header'}>
             <div className="header_container">
                 <Link to='/' className='header_logo' >
                     <img src={FTlogo} alt="logo" />

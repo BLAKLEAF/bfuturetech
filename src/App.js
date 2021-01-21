@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import './App.css';
 import Header from './Header';
-import Home from './Home';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Banner from './Banner';
+import Home from './Home';
+import Footer from "./Footer";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from './Checkout';
 import Login from './Login';
 import { auth } from './firebase';
@@ -43,38 +44,48 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <div className="app">
-        <Switch>
-          <Route path='/orders'>
-            <Header />
-            <Banner />
-            <Orders />
-          </Route>
-          <Route path='/login'>
-            <Banner />
-            <Login />
-          </Route>
-          <Route path='/checkout'>
-            <Header />
-            <Banner />
-            <Checkout />
-          </Route>
-          <Route path='/payment'>
-            <Header />
-            {/* <Banner /> */}
-            <Elements stripe={promise}>
-              <Payment />
-            </Elements>
-          </Route>
-          <Route path='/'>
-            <Header />
-            {/* <Banner /> */}
-            {/* <Home /> */}
-          </Route>
-        </Switch>
+    <>
+      <div className="content">
+        <Router>
+          {/* <div className="app"> ---------------------*/}
+          <Switch>
+            <Route path='/orders'>
+              <Header />
+              {/* <Banner /> */}
+              <Orders />
+              {/* <Footer /> */}
+            </Route>
+            <Route path='/login'>
+              {/* <Banner /> */}
+              <Login />
+              {/* <Footer /> */}
+            </Route>
+            <Route path='/checkout'>
+              <Header />
+              {/* <Banner /> */}
+              <Checkout />
+              {/* <Footer /> */}
+            </Route>
+            <Route path='/payment'>
+              <Header />
+              {/* <Banner /> */}
+              <Elements stripe={promise}>
+                <Payment />
+              </Elements>
+              {/* <Footer /> */}
+            </Route>
+            <Route path='/'>
+              <Header />
+              <Banner />
+              <Home />
+              {/* <Footer /> */}
+            </Route>
+          </Switch>
+          {/* </div> --------------------------------*/}
+        </Router>
       </div>
-    </Router>
+      <Footer className='appClass_footer' />
+    </>
   );
 }
 
