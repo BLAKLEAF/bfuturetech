@@ -70,6 +70,7 @@
 .nav_bold {
   font-weight: bold;
   font-size: 15px;
+  font-family: hyperHelixItalic;
 }
 
 .signIn {
@@ -118,7 +119,7 @@
 .cartItem {
   position: relative;
   bottom: 15px;
-  left: 14px;
+  left: 17px;
 }
 
 .cartIcon {

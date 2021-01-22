@@ -21,6 +21,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "hyperHelixItalic";
+  src: local("hyperHelixItalic"),
+    url(./fonts/HyperHelix/HyperHelixItalic-9YYyj.ttf) format("truetype");
+}
+
 #root {
   height: 100%;
   display: flex;

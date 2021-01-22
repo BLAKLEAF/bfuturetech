@@ -31,7 +31,7 @@ function order({ order }) {
                 value={order.data.amount / 100}
                 displayType={"text"}
                 thousandSeparator={true}
-                prefix={'$'}
+                prefix={'Rs.'}
             />
         </div>
     )

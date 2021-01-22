@@ -8,6 +8,7 @@ import './Payment.css'
 import { getBasketTotal } from './reducer';
 import { useStateValue } from './StateProvider';
 import { db } from "./firebase";
+import { FaRupeeSign } from 'react-icons/fa';
 
 function Payment() {
     const [{ basket, user }, dispatch] = useStateValue();
@@ -78,7 +79,7 @@ function Payment() {
     return (
         <div className='payment'>
             <div className="payment_container">
-                <h1>Checkout (<Link to='/checkout'>{basket?.length} items</Link>)</h1>
+                <h1>Checkout (<Link to='/checkout' className='paymentLink'>{basket?.length} items</Link>)</h1>
                 <div className="payment_section">
                     <div className="payment_title">
                         <h3>Delivery Address</h3>
@@ -111,17 +112,16 @@ function Payment() {
                     </div>
                     <div className="payment_details">
                         <form onSubmit={handleSubmit}>
-                            <CardElement onChange={handleChange} />
+                            <CardElement onChange={handleChange} className='cardElement' />
                             <div className="payment_priceContainer">
                                 <CurrencyFormat
                                     renderText={(value) => (
-                                        <h3>Order Total : {value}</h3>
+                                        <h3>Order Total : <FaRupeeSign />{value}</h3>
                                     )}
                                     decimalScale={2}
                                     value={getBasketTotal(basket)}
                                     displayType={"text"}
                                     thousandSeparator={true}
-                                    prefix={'$'}
                                 />
                                 <button disabled={processing || disabled || succeeded}>
                                     <span>{processing ? <p>Processing</p> : "Buy Now"}</span>

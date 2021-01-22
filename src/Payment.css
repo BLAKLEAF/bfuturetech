@@ -1,5 +1,6 @@
 .payment {
   /* background-color: darkgrey; */
+  font-family: hyperHelixItalic;
 }
 
 .payment_container > h1 {
@@ -8,6 +9,11 @@
   font-weight: 400;
   /* background-color: darkkhaki; */
   border-bottom: 1px solid lightgray;
+}
+
+.paymentLink {
+  text-decoration: none !important;
+  color: white;
 }
 
 .payment_section {
@@ -25,6 +31,12 @@
 .payment_items,
 .payment_details {
   flex: 0.8;
+}
+
+.cardElement {
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 50px;
 }
 
 .payment_details > form {

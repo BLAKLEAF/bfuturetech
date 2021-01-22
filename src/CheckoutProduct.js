@@ -2,6 +2,7 @@ import React from 'react'
 import './CheckoutProduct.css'
 import Star from './images/star.svg'
 import { useStateValue } from './StateProvider'
+import { FaRupeeSign } from 'react-icons/fa';
 
 function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
 
@@ -21,7 +22,7 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
                     {title}
                 </p>
                 <p className="checkoutProduct_price">
-                    <small>$</small>
+                    <FaRupeeSign />
                     <strong>{price}</strong>
                 </p>
                 <div className="checkoutProduct_rating">
@@ -35,7 +36,7 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
                     <button onClick={removeFromBasket}>Remove from Cart</button>
                 )}
             </div>
-        </div>
+        </div >
     )
 }
 

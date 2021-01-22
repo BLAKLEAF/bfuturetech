@@ -2,6 +2,7 @@ import React from 'react'
 import './Product.css'
 import Star from './images/star.svg'
 import { useStateValue } from './StateProvider'
+import { FaRupeeSign } from 'react-icons/fa';
 
 function Product({ id, title, image, price, rating, placeholder }) {
     const [{ basket }, dispatch] = useStateValue();
@@ -23,7 +24,7 @@ function Product({ id, title, image, price, rating, placeholder }) {
             <div className="product_info">
                 <p>{title}</p>
                 <p className="product_price">
-                    <small>$</small>
+                    <FaRupeeSign />
                     <strong>{price}</strong>
                 </p>
                 <div className="product_rating">

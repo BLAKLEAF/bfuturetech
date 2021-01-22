@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
+  font-family: hyperHelixItalic;
   /* background-color: rgb(56, 53, 53); */
   /* height: max-content; */
 }
