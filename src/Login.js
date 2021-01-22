@@ -55,11 +55,11 @@ function Login() {
                 </form>
 
                 <p>
-                    By signing-in you agree to the BLAKLEAF FUTURE TECHs Conditions of Use & Sale. Please
+                    By signing-in, you agree to the <span className='futureTech'>BLAKLEAF FUTURE TECHs</span> Conditions of Use & Sale. Please
                     see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
                 </p>
 
-                <button onClick={register} className='login_registerButton'>Create your Amazon Account</button>
+                <button onClick={register} className='login_registerButton'>Create your FT Account</button>
             </div>
         </div>
     )

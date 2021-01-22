@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: hyperHelixItalic;
 }
 
 .login_logo {
@@ -54,6 +55,10 @@
   /* border: 1px solid; */
   margin-top: 10px;
   /* border-color: #a88734 #9c7e31 #846a29; */
+}
+
+.futureTech {
+  color: red;
 }
 
 .login_registerButton {
